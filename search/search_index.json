@@ -2,13 +2,28 @@
     "docs": [
         {
             "location": "/",
-            "text": "Guia de tradu\u00e7\u00e3o do Steam Translation Brasil\n\n\nBoas-vindas ao guia de tradu\u00e7\u00e3o da equipe brasileira do\n\nSteam Translation\n!\n\n\nEste guia est\u00e1 atualmente em constru\u00e7\u00e3o...",
+            "text": "Guia de tradu\u00e7\u00e3o do Steam Translation Brasil\n\n\nBoas-vindas ao guia de tradu\u00e7\u00e3o da equipe brasileira do\n\nSteam Translation\n!\n\n\nUse o \u00edndice ao lado para navegar. \n\n\nCandidatos\n\n\n\u00c9 candidato? Comece \npor aqui\n.\n\n\nEste guia est\u00e1 atualmente em constru\u00e7\u00e3o...",
             "title": "In\u00edcio"
         },
         {
             "location": "/#guia-de-traducao-do-steam-translation-brasil",
-            "text": "Boas-vindas ao guia de tradu\u00e7\u00e3o da equipe brasileira do Steam Translation !  Este guia est\u00e1 atualmente em constru\u00e7\u00e3o...",
+            "text": "Boas-vindas ao guia de tradu\u00e7\u00e3o da equipe brasileira do Steam Translation !  Use o \u00edndice ao lado para navegar.",
             "title": "Guia de tradu\u00e7\u00e3o do Steam Translation Brasil"
+        },
+        {
+            "location": "/#candidatos",
+            "text": "\u00c9 candidato? Comece  por aqui .  Este guia est\u00e1 atualmente em constru\u00e7\u00e3o...",
+            "title": "Candidatos"
+        },
+        {
+            "location": "/candidatos/geral/",
+            "text": "Informa\u00e7\u00f5es gerais para candidatos\n\n\nOl\u00e1, candidato ou candidata do STS Brasil!\n\n\nJ\u00e1 j\u00e1\n*\n transferiremos tudo do guia do Google Docs\npara c\u00e1!",
+            "title": "Informa\u00e7\u00f5es gerais"
+        },
+        {
+            "location": "/candidatos/geral/#informacoes-gerais-para-candidatos",
+            "text": "Ol\u00e1, candidato ou candidata do STS Brasil!  J\u00e1 j\u00e1 *  transferiremos tudo do guia do Google Docs\npara c\u00e1!",
+            "title": "Informa\u00e7\u00f5es gerais para candidatos"
         },
         {
             "location": "/jogos/artifact/",
