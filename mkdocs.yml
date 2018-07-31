@@ -1,0 +1,10 @@
+site_name: Guia Steam Translation Brasil
+site_description: Guia de tradução da equipe brasileira do Steam Translation
+site_author: Equipe STS Brasil
+site_url: http://sts.berna.zone
+repo_url: https://github.com/Berna-L/documentacao-sts-brasil
+repo_name: 'Contribua!'
+pages:
+  - Início: 'index.md'
+theme:
+  name: 'material'
