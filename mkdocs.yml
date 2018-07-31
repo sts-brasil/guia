@@ -13,3 +13,15 @@ pages:
 theme:
   name: 'material'
   language: 'pt'
+  font:
+    text: 'PT Sans'
+  palette:
+    primary: 'blue grey'
+  logo:
+    icon: 'flagflagflag'
+extra:
+  social:
+  - type: 'globe'
+    link: https://translation.steampowered.com
+  - type: 'steam'
+    link: 'https://steamcommunity.com/groups/STSBrasil'
