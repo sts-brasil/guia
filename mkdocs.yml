@@ -7,6 +7,6 @@ repo_name: 'Contribua!'
 pages:
   - Início: 'index.md'
   - Jogos:
-      - Artifact: 'artifact.md'
+      - Artifact: 'jogos/artifact.md'
 theme:
   name: 'material'
