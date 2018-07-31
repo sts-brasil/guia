@@ -6,7 +6,10 @@ repo_url: https://github.com/Berna-L/documentacao-sts-brasil
 repo_name: 'Contribua!'
 pages:
   - Início: 'index.md'
+  - Candidatos:
+      - 'Informações gerais': 'candidatos/geral.md'
   - Jogos:
       - Artifact: 'jogos/artifact.md'
 theme:
   name: 'material'
+  language: 'pt'
