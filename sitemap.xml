@@ -6,12 +6,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://sts.berna.zone/candidatos/geral/</loc>
+     <loc>http://sts.berna.zone/candidatos/principal/</loc>
      <lastmod>2018-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/jogos/artifact/</loc>
+     <lastmod>2018-07-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://sts.berna.zone/apendice/produtos-disponiveis/</loc>
      <lastmod>2018-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
