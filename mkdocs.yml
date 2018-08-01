@@ -7,9 +7,11 @@ repo_name: 'Contribua!'
 pages:
   - Início: 'index.md'
   - Candidatos:
-      - 'Informações gerais': 'candidatos/geral.md'
+      - 'Informações gerais': 'candidatos/principal.md'
   - Jogos:
       - Artifact: 'jogos/artifact.md'
+  - Apêndice:
+      - Produtos disponíveis: 'apendice/produtos-disponiveis.md'
 theme:
   name: 'material'
   language: 'pt'
