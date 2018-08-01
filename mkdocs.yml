@@ -7,9 +7,14 @@ repo_name: 'Contribua!'
 pages:
   - Início: 'index.md'
   - Candidatos:
-      - 'Informações gerais': 'candidatos/principal.md'
+      - 'Informações gerais': 'candidatos/index.md'
+      - Dicas: 'candidatos/dicas.md'
+      - Regras: 'candidatos/regras.md'
   - Jogos:
       - Artifact: 'jogos/artifact.md'
+      - Dota 2:
+        - 'Informações gerais': 'jogos/dota2/index.md'
+        - 'Glossário': 'jogos/dota2/glossario.md'
   - Apêndice:
       - Produtos disponíveis: 'apendice/produtos-disponiveis.md'
 theme:

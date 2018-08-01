@@ -2,6 +2,8 @@
 
 Olá, candidato ou candidata do STS Brasil!
 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7osdtXvX6Py4K3RY2AteQD33KXhEOeSQ8b6wwquqexb1WLg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="">Carregando…</iframe>
+
 Já já[*](https://developer.valvesoftware.com/wiki/Valve_Time) transferiremos tudo do guia do Google Docs
 para cá!
 

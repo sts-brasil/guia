@@ -8,7 +8,7 @@ Use o índice ao lado para navegar.
 
 ## Candidatos
 Você está se candidatando a tradutor para português brasileiro do STS?
-Comece [por aqui](candidatos/principal.md).
+Comece [por aqui](candidatos/index.md).
 
 
 ## Comunicação
