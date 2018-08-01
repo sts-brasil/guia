@@ -6,12 +6,32 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://sts.berna.zone/candidatos/principal/</loc>
+     <loc>http://sts.berna.zone/candidatos/</loc>
+     <lastmod>2018-07-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://sts.berna.zone/candidatos/dicas/</loc>
+     <lastmod>2018-07-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://sts.berna.zone/candidatos/regras/</loc>
      <lastmod>2018-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/jogos/artifact/</loc>
+     <lastmod>2018-07-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://sts.berna.zone/jogos/dota2/</loc>
+     <lastmod>2018-07-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://sts.berna.zone/jogos/dota2/glossario/</loc>
      <lastmod>2018-07-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
