@@ -32,7 +32,9 @@ Depois de escolher o que fazer, realize uma bifurcação do repositório para a 
 Para tal, acesse [esta página](https://github.com/sts-brasil/guia/fork)
 e siga as instruções.
 
-## 3&ordm; passo A: Edição em máquina local
+_Moderadores não precisam realizar este passo._
+
+## 3&ordm; passo (A): Edição em máquina local
 
 ### i. Clonagem do repositório
 Para colaboradores no Windows ou macOS, este processo pode ser realizado de forma mais fácil
@@ -122,11 +124,114 @@ Tente acessar as páginas criadas e editadas e confirme que tudo está nos confo
 alterar mais alguma coisa, basta editar que a página será recarregada automaticamente.
 
 ### v. Efetivação das alterações
-Caso esteja no GitHub Desktop,
+Caso esteja no GitHub Desktop, na aba _Changes_ à direita haverá uma listagem dos arquivos alterados.
+Assinale os arquivos desejados e, embaixo, informe o resumo e a descrição das alterações.
+O resumo deve começar como descrito [aqui](#formato-da-mensagem-de-commit) e deve ser breve.
+A descrição pode ser mais longa, mas não muito.
 
-## 3&ordm; passo B: Edição via GitHub
+Já para usuários da linha de comando, adicione os arquivos à área de preparação
+e realize um _commit_ cuja mensagem segue o formato [aqui definido](#formato-da-mensagem-de-commit).
 
-Esta opção não é recomendada devido 
+### vi. Envio das alterações para o GitHub
+GitHub Desktop: Clique no botão &quot;Push to origin&quot; no topo da janela.
+
+Git em linha de comando: `git push origin`
+## 3&ordm; passo (B): Edição via GitHub
+
+_Esta opção é recomendada apenas para alterações simples._
+
+### i. Criação de um novo ramo
+Abra a página do seu _fork_ do repositório no GitHub e clique no botão **Branch: master** à esquerda,
+acima da lista de arquivos. No campo que aparecer, digite o nome do ramo e aperte Enter. O ramo será criado.
+
+O nome do ramo fica à sua escolha, mas é recomendável usar um nome que comece com a numeração
+do _issue_ no GitHub seguido de algumas poucas palavras que descrevem o _issue_.
+Exemplo: `10-adicionar-glossario-tf2`
+
+### ii-a. Edição de arquivos
+
+Para editar um arquivo, selecione-o no GitHub e clique no lápis à direita, acima do conteúdo do arquivo.
+Realize as alterações necessárias, seguindo o [guia de estilo](guia-de-estilo.md).
+Quando terminar, use a aba **Preview** para verificar se tudo está correto
+(contudo, certos recursos não serão exibidos corretamente no GitHub).
+Depois, no fim da página, informe o resumo (seguindo [este formato](#formato-da-mensagem-de-commit))
+e a descrição da alteração.
+
+### ii-a. Criação de arquivos
+
+Para adicionar páginas, primeiro defina onde ela ficará localizada segundo o índice.
+O local do respectivo arquivo deve então seguir esta mesma localização.
+
+Ex: Páginas associadas ao jogo Ricochet 2 devem estar na pasta `docs/jogos/ricochet2`.
+
+O nome do arquivo deve ser baseado no título da página, com a extensão .md,
+a não ser que seja a página principal daquela seção; 
+este caso, o nome do arquivo deve ser `index.md`.
+
+Para criar um arquivo, clique no botão **Create new file** na página do GitHub.
+No topo da janela que abrir, digite o nome do arquivo, separando diretórios com barras.
+
+Ex: Para criar duas páginas do jogo Ricochet 2, uma de informações gerais (que será a página principal)
+e uma de glossário, criaremos dois arquivos:
+
+```
+docs/jogos/ricochet2/index.md
+docs/jogos/ricochet2/glossario.md
+```
+
+Por último, adicione as páginas ao índice. Abra o arquivo [mkdocs.yml](mkdocs.yml) e, na seção
+`# Listagem de páginas`, adicione os nomes no índice e caminhos para os novos arquivos.
+No caso de jogos, lembre-se de sempre mantê-lo em ordem alfabética com outros jogos.
+Tirando isso, use a ordenação que achar melhor.
+
+Ex: Para os dois arquivos criados acima, as entradas a seguir são adicionadas:
+
+```yaml
+ #Listagem de páginas
+ pages:
+# Outras entradas...
+   - Jogos:
+    # Mais entradas de jogos...
+       - Ricochet 2:
+         - 'Informações gerais': 'jogos/ricochet2/index.md'
+         - 'Glossário': 'jogos/ricochet2/glossario.md'
+     # Mais outras entradas...
+```
+
+## 4&ordm; passo: Enviando as alterações para o repositório canônico
+Depois de concluir tudo o que queria fazer, é hora de enviar tudo para o repositório canônico.
+No GitHub, isso é feito por meio de um _pull request_ (PR).
+
+Abra a página do seu _fork_ no GitHub, selecione o ramo onde efetuou as alterações por meio
+do botão **Branch:** à esquerda e depois clique em **New pull request**.
+
+Dê um título para o PR (citando o número do _issue_ com um # antes, ex: `#10`) e descreva
+o que foi feito no comentário. Depois clique em **Create pull request**.
+
+## Apêndice
+
+### Formato da mensagem de _commit_
+Toda mensagem de commit **deve** iniciar da seguinte forma:
+
+```
+[tipo] #[numero-issue] por [usuario-no-GitHub]:
+```
+
+Sendo `[tipo]` a palavra `REFS` se a tarefa ainda não estiver concluída
+ou `CLOSES` se estiver.
+
+Ex: O usuário Fulano-de-Tal está adicionando o glossário do Ricochet 2 (_issue_ 3).
+Ele ainda não terminou, mas deseja efetivar as alterações até agora. Logo, a mensagem de _commit_ será:
+
+```
+REFS #3 por Fulano-de_tal: Começando a criar glossário do Ricochet 2.
+```
+
+Depois, quando ele terminar e efetivar, a mensagem desse novo _commit_ será:
+
+```
+CLOSES #3 por Fulano-de_tal: Terminei criação do glossário do Ricochet 2.
+```
 
 # Código de Conduta para Colaboradores
 ## Nossa promessa
