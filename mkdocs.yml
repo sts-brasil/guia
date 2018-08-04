@@ -1,9 +1,16 @@
+# Dados do site
 site_name: Guia Steam Translation Brasil
 site_description: Guia de tradução da equipe brasileira do Steam Translation
 site_author: Equipe STS Brasil
 site_url: http://sts.berna.zone
 repo_url: https://github.com/Berna-L/documentacao-sts-brasil
+copyright: Valve, Steam e Steam Translation são marcas e/ou marcas registradas da Valve Corporation.<br/>
+  Demais marcas e marcas registradas citadas e/ou ilustradas nesta documentação são propriedade
+  dos seus respectivos donos.
+#Nome do repositório (no canto sup dir)
 repo_name: 'Contribua!'
+
+#Listagem de páginas
 pages:
   - Início: 'index.md'
   - Candidatos:
@@ -18,6 +25,8 @@ pages:
         - 'Glossário': 'jogos/dota2/glossario.md'
   - Apêndice:
       - Produtos disponíveis: 'apendice/produtos-disponiveis.md'
+
+# Configurações do tema
 theme:
   name: 'material'
   language: 'pt'
@@ -26,13 +35,21 @@ theme:
   palette:
     primary: 'blue grey'
   logo:
+    # Pra ficar que nem as três bandeirinhas do STS
     icon: 'flagflagflag'
+
+#Configurações extras
 extra:
+  search:
+    language: 'pt'
+  # Ícones no rodapé
   social:
   - type: 'globe'
     link: https://translation.steampowered.com
   - type: 'steam'
     link: 'https://steamcommunity.com/groups/STSBrasil'
+
+# Extensões
 markdown_extensions:
   - admonition
   - footnotes
