@@ -15,7 +15,7 @@ _Valve, Steam e Steam Translation são marcas e/ou marcas registradas da Valve C
 Demais marcas e marcas registradas citadas e/ou ilustradas nesta documentação são propriedade
 dos seus respectivos donos._
 
-#Steam Translation Brazil translation guide
+# Steam Translation Brazil translation guide
 This repository contains the newest version of the Steam Translation Brazilian translation team.
 Steam Translation is a Valve platform for localizing Steam and other Valve products.
 
