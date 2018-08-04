@@ -46,12 +46,25 @@ Para colaboradores no Linux e/ou com maior afinidade com git,
 abra o terminal/prompt de comando, navegue até a pasta onde deseja clonar o repositório
 e clone-o.
 
-### ii-a. Edição de páginas
+### ii. Criação de novo ramo
+Crie um novo ramo para melhor organizar as suas alterações. Caso esteja usando o GitHub Desktop,
+clique em _Current branch_ no topo e depois no botão _New branch_. Para usuários do git em
+linha de comando, navegue até a raiz do repositório e execute o comando:
+
+```bash
+git checkout -b [nome-do-ramo]
+```
+
+O nome do ramo fica à sua escolha, mas é recomendável usar um nome que comece com a numeração
+do _issue_ no GitHub seguido de algumas poucas palavras que descrevem o _issue_.
+Exemplo: `10-adicionar-glossario-tf2`
+
+### iii-a. Edição de páginas
 Para editar páginas, basta abrir o arquivo .md correspondente e começar a editá-lo, seguindo o nosso
 [guia de estilo](guia-de-estilo.md). Um editor recomendado é o [Visual Studio Code](https://code.visualstudio.com/),
 com extensões para Markdown (o próprio editor recomendará alguns) e para correção ortográfica.
 
-### ii-b. Adição de páginas
+### iii-b. Adição de páginas
 Para adicionar páginas, primeiro defina onde ela ficará localizada segundo o índice.
 O local do respectivo arquivo deve então seguir esta mesma localização.
 
@@ -88,7 +101,32 @@ Ex: Para os dois arquivos criados acima, as entradas a seguir são adicionadas:
      # Mais outras entradas...
 ```
 
+### iv. Testes locais (opcional)
+Quando tiver terminado de realizar as suas alterações, realize um teste das páginas
+para ver se a formatação está correta e os links no índice estão funcionando.
 
+Para isso, é necessário instalar o Python na sua máquina. Recomendamos usar uma instalação
+via gerenciador de pacotes (ex: [Chocolatey no Windows](https://chocolatey.org/packages/python))
+para que configure o PATH automaticamente.
+
+Depois de instalado, [crie e ative um novo ambiente virtual](https://docs.python.org/3/tutorial/venv.html)
+onde preferir, depois acesse a pasta raiz do repositório pelo terminal/prompt de comando e execute:
+
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
+
+Depois, abra a página http://127.0.0.1:8000 &mdash; o guia deverá carregar, com as suas alterações.
+Tente acessar as páginas criadas e editadas e confirme que tudo está nos conformes. Caso precise
+alterar mais alguma coisa, basta editar que a página será recarregada automaticamente.
+
+### v. Efetivação das alterações
+Caso esteja no GitHub Desktop,
+
+## 3&ordm; passo B: Edição via GitHub
+
+Esta opção não é recomendada devido 
 
 # Código de Conduta para Colaboradores
 ## Nossa promessa
