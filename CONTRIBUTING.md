@@ -13,12 +13,12 @@ não são obrigatórios, mas auxiliam nos testes e verificação de contribuiç�
 ## 1&ordm; passo: Escolha do que contribuir
 
 A plataforma GitHub permite a adição e acompanhamento de problemas e pendências conhecidas
-do projeto por meio da seção [issues](https://github.com/Berna-L/documentacao-sts-brasil/issues).
+do projeto por meio da seção [issues](https://github.com/sts-brasil/guia/issues).
 Por meio dela é possível tanto indicar novos problemas, como escolher no que trabalhar.
 
 ### Achei algo para corrigir ou adicionar
 
-Neste caso, acesse a página de [novo _issue_](https://github.com/Berna-L/documentacao-sts-brasil/issues/new).
+Neste caso, acesse a página de [novo _issue_](https://github.com/sts-brasil/guia/issues/new).
 Informe um título breve e detalhe, na descrição, o que deve ser adicionado, removido, corrigido, etc.
 
 No caso de correções simples, é recomendável que já emende com um [_pull request_](#) com a correção
@@ -29,14 +29,64 @@ Veja as _issues_ abertas e escolha uma!
 
 ## 2&ordm; passo: Bifurcação (_fork_) do repositório
 Depois de escolher o que fazer, realize uma bifurcação do repositório para a sua conta.
-Para tal, acesse [esta página](https://github.com/Berna-L/documentacao-sts-brasil/fork)
+Para tal, acesse [esta página](https://github.com/sts-brasil/guia/fork)
 e siga as instruções.
 
-## 3&ordm; passo (usuários avançados): Clonagem do repositório
+## 3&ordm; passo A: Edição em máquina local
 
-Realize a clonagem do repositório na sua máquina local. Para tal, é necessário ter o
-[git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git) instalado.
-Para colaboradores no Windows, aconselhamos o uso do aplicativo [GitHub Desktop](https://desktop.github.com/).
+### i. Clonagem do repositório
+Para colaboradores no Windows ou macOS, este processo pode ser realizado de forma mais fácil
+com o uso do aplicativo [GitHub Desktop](https://desktop.github.com/).
+
+Depois de instalar o aplicativo e abri-lo, clique em _Clone a repository_ e selecione o repositório
+bifurcado.
+
+Para colaboradores no Linux e/ou com maior afinidade com git,
+[instale o git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git),
+abra o terminal/prompt de comando, navegue até a pasta onde deseja clonar o repositório
+e clone-o.
+
+### ii-a. Edição de páginas
+Para editar páginas, basta abrir o arquivo .md correspondente e começar a editá-lo, seguindo o nosso
+[guia de estilo](guia-de-estilo.md). Um editor recomendado é o [Visual Studio Code](https://code.visualstudio.com/),
+com extensões para Markdown (o próprio editor recomendará alguns) e para correção ortográfica.
+
+### ii-b. Adição de páginas
+Para adicionar páginas, primeiro defina onde ela ficará localizada segundo o índice.
+O local do respectivo arquivo deve então seguir esta mesma localização.
+
+Ex: Páginas associadas ao jogo Ricochet 2 devem estar na pasta `docs/jogos/ricochet2`.
+
+O nome do arquivo deve ser baseado no título da página, com a extensão .md,
+a não ser que seja a página principal daquela seção; 
+este caso, o nome do arquivo deve ser `index.md`.
+
+Ex: Para criar duas páginas do jogo Ricochet 2, uma de informações gerais (que será a página principal)
+e uma de glossário, criaremos dois arquivos:
+
+```
+docs/jogos/ricochet2/index.md
+docs/jogos/ricochet2/glossario.md
+```
+
+Por último, adicione as páginas ao índice. Abra o arquivo [mkdocs.yml](mkdocs.yml) e, na seção
+`# Listagem de páginas`, adicione os nomes no índice e caminhos para os novos arquivos.
+No caso de jogos, lembre-se de sempre mantê-lo em ordem alfabética com outros jogos.
+Tirando isso, use a ordenação que achar melhor.
+
+Ex: Para os dois arquivos criados acima, as entradas a seguir são adicionadas:
+
+```yaml
+ #Listagem de páginas
+ pages:
+# Outras entradas...
+   - Jogos:
+    # Mais entradas de jogos...
+       - Ricochet 2:
+         - 'Informações gerais': 'jogos/ricochet2/index.md'
+         - 'Glossário': 'jogos/ricochet2/glossario.md'
+     # Mais outras entradas...
+```
 
 
 
