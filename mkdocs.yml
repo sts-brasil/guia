@@ -10,6 +10,7 @@ pages:
       - 'Informações gerais': 'candidatos/index.md'
       - Dicas: 'candidatos/dicas.md'
       - Regras: 'candidatos/regras.md'
+  - Tradutores externos: 'externos/index.md'
   - Jogos:
       - Artifact: 'jogos/artifact.md'
       - Dota 2:
@@ -32,3 +33,26 @@ extra:
     link: https://translation.steampowered.com
   - type: 'steam'
     link: 'https://steamcommunity.com/groups/STSBrasil'
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - markdown_include.include:
+      base_path: docs
