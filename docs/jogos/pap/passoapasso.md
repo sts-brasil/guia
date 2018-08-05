@@ -1,1 +1,2 @@
-[Insisra o texto traduzido aqui]
+[Insira o texto traduzido aqui]
+[Mais texto aqui]
