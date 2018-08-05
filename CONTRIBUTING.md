@@ -1,5 +1,5 @@
 # Contribuindo com o guia
-_Due to the nature of this repository, this documentation is aimed to Portuguese-speakers only._
+_Due to the nature of this repository, this documentation is aimed at Portuguese-speakers only._
 
 Para contribuir com este guia, é necessário ter conhecimento de Markdown
 e um pouco de conhecimento tanto de Git quanto da plataforma GitHub.
@@ -21,8 +21,9 @@ Por meio dela é possível tanto indicar novos problemas, como escolher no que t
 Neste caso, acesse a página de [novo _issue_](https://github.com/sts-brasil/guia/issues/new).
 Informe um título breve e detalhe, na descrição, o que deve ser adicionado, removido, corrigido, etc.
 
-No caso de correções simples, é recomendável que já emende com um [_pull request_](#) com a correção
-já aplicada.
+No caso de correções simples que você mesmo pode fazer, é recomendável abrir um
+_pull request_ com a correção já aplicada em vez de abrir um _issue_.
+Desta forma, pule esta parte e ignore partes do guia que digam para referenciar o número do _issue_.
 
 ### Quero contribuir, mas não sei com o quê
 Veja as _issues_ abertas e escolha uma!
@@ -46,20 +47,26 @@ bifurcado.
 Para colaboradores no Linux e/ou com maior afinidade com git,
 [instale o git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git),
 abra o terminal/prompt de comando, navegue até a pasta onde deseja clonar o repositório
-e clone-o.
+e clone-o. Exemplo para um usuário Fulano-de-Tal, que clonará o seu _fork_, também chamado
+`guia`, na pasta `/home/fulano/workspace`:
+
+```console
+$ cd /home/fulano/workspace
+$ git clone https://github.com/Fulano-de-Tal/guia.git
+```
 
 ### ii. Criação de novo ramo
 Crie um novo ramo para melhor organizar as suas alterações. Caso esteja usando o GitHub Desktop,
 clique em _Current branch_ no topo e depois no botão _New branch_. Para usuários do git em
 linha de comando, navegue até a raiz do repositório e execute o comando:
 
-```bash
-git checkout -b [nome-do-ramo]
+```console
+$ git checkout -b [nome-do-ramo]
 ```
 
 O nome do ramo fica à sua escolha, mas é recomendável usar um nome que comece com a numeração
 do _issue_ no GitHub seguido de algumas poucas palavras que descrevem o _issue_.
-Exemplo: `10-adicionar-glossario-tf2`
+Exemplo: `10-adicionar-guia-ricochet2`
 
 ### iii-a. Edição de páginas
 Para editar páginas, basta abrir o arquivo .md correspondente e começar a editá-lo, seguindo o nosso
@@ -114,9 +121,9 @@ para que configure o PATH automaticamente.
 Depois de instalado, [crie e ative um novo ambiente virtual](https://docs.python.org/3/tutorial/venv.html)
 onde preferir, depois acesse a pasta raiz do repositório pelo terminal/prompt de comando e execute:
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
+```console
+$ pip install -r requirements.txt
+$ mkdocs serve
 ```
 
 Depois, abra a página http://127.0.0.1:8000 &mdash; o guia deverá carregar, com as suas alterações.
@@ -129,8 +136,50 @@ Assinale os arquivos desejados e, embaixo, informe o resumo e a descrição das 
 O resumo deve começar como descrito [aqui](#formato-da-mensagem-de-commit) e deve ser breve.
 A descrição pode ser mais longa, mas não muito.
 
-Já para usuários da linha de comando, adicione os arquivos à área de preparação
+Já para usuários da linha de comando, adicione arquivos novos à área de preparação,
+confirme que todos os arquivos estão adicionados
 e realize um _commit_ cuja mensagem segue o formato [aqui definido](#formato-da-mensagem-de-commit).
+
+Para o exemplo dos dois arquivos acima:
+1. Adicionamos quaisquer arquivos novos à área de preparação:
+    ```console
+    $ git add docs/jogos/ricochet2/index.md
+    $ git add docs/jogos/ricochet2/glossario.md
+    ```
+
+2. Confirme que todos os arquivos que adicionados/alterados, e apenas eles, estão
+na área de preparação:
+    ```console
+    $ git status
+    On branch 10-adicionar-guia-ricochet2
+    Your branch is up to date with 'origin/10-adicionar-guia-ricochet2'.
+    
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+    
+            new file:   docs/jogos/ricochet2/glossario.md
+            new file:   docs/jogos/ricochet2/index.md
+    
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+    
+            modified:   mkdocs.yml
+    ```
+    
+    Caso tenha algum arquivo indesejado na lista de `new file:` ou `modified:`, digite
+    `git checkout [caminho do arquivo]` para revertê-lo à versão original.
+    
+3. Inicie o processo de commit:
+    ```bash
+    $ git commit
+    ```
+    
+4. Na tela de edição que será exibida, digite a mensagem do commit.
+Na primeira linha, inicie com [esta parte](#formato-da-mensagem-de-commit) e, depois, um resumo (de 5 palavras).
+do que foi feito. Depois, caso achar necessário uma descrição mais longa, aperte Enter duas vezes e digite
+uma descrição mais longa. Quando terminar, pressione <kbd>Ctrl</kbd> + <kbd>X</kbd>,
+<kbd>Y</kbd> (para salvar) e <kbd>Enter</kbd>.
 
 ### vi. Envio das alterações para o GitHub
 GitHub Desktop: Clique no botão &quot;Push to origin&quot; no topo da janela.
@@ -146,7 +195,7 @@ acima da lista de arquivos. No campo que aparecer, digite o nome do ramo e apert
 
 O nome do ramo fica à sua escolha, mas é recomendável usar um nome que comece com a numeração
 do _issue_ no GitHub seguido de algumas poucas palavras que descrevem o _issue_.
-Exemplo: `10-adicionar-glossario-tf2`
+Exemplo: `10-adicionar-guia-ricochet2`
 
 ### ii-a. Edição de arquivos
 
@@ -205,8 +254,8 @@ No GitHub, isso é feito por meio de um _pull request_ (PR).
 Abra a página do seu _fork_ no GitHub, selecione o ramo onde efetuou as alterações por meio
 do botão **Branch:** à esquerda e depois clique em **New pull request**.
 
-Dê um título para o PR (citando o número do _issue_ com um # antes, ex: `#10`) e descreva
-o que foi feito no comentário. Depois clique em **Create pull request**.
+Dê um título para o PR (citando o número do _issue_ com um # antes, ex: `#10 Adição arquivos Ricochet 2`)
+e descreva o que foi feito no comentário. Depois clique em **Create pull request**.
 
 ## Apêndice
 
@@ -224,13 +273,19 @@ Ex: O usuário Fulano-de-Tal está adicionando o glossário do Ricochet 2 (_issu
 Ele ainda não terminou, mas deseja efetivar as alterações até agora. Logo, a mensagem de _commit_ será:
 
 ```
-REFS #3 por Fulano-de_tal: Começando a criar glossário do Ricochet 2.
+REFS #3 por Fulano-de-Tal: Começando a criar guia do Ricochet 2.
 ```
 
 Depois, quando ele terminar e efetivar, a mensagem desse novo _commit_ será:
 
 ```
-CLOSES #3 por Fulano-de_tal: Terminei criação do glossário do Ricochet 2.
+CLOSES #3 por Fulano-de-Tal: Terminei criação do guia do Ricochet 2.
+```
+
+_Caso esteja realizando uma alteração simples, sem_ issue, _basta citar o nome do usuário, desta forma:_
+
+```
+por Fulano-de-Tal: Corrigi um erro no glossário do Ricochet 2.
 ```
 
 # Código de Conduta para Colaboradores
