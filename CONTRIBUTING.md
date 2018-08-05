@@ -1,5 +1,5 @@
 # Contribuindo com o guia
-_Due to the nature of this repository, this documentation is aimed to Portuguese-speakers only._
+_Due to the nature of this repository, this documentation is aimed at Portuguese-speakers only._
 
 Para contribuir com este guia, é necessário ter conhecimento de Markdown
 e um pouco de conhecimento tanto de Git quanto da plataforma GitHub.
@@ -21,8 +21,9 @@ Por meio dela é possível tanto indicar novos problemas, como escolher no que t
 Neste caso, acesse a página de [novo _issue_](https://github.com/sts-brasil/guia/issues/new).
 Informe um título breve e detalhe, na descrição, o que deve ser adicionado, removido, corrigido, etc.
 
-No caso de correções simples, é recomendável que já emende com um [_pull request_](#) com a correção
-já aplicada.
+No caso de correções simples que você mesmo pode fazer, é recomendável abrir um
+_pull request_ com a correção já aplicada em vez de abrir um _issue_.
+Desta forma, pule esta parte e ignore partes do guia que digam para referenciar o número do _issue_.
 
 ### Quero contribuir, mas não sei com o quê
 Veja as _issues_ abertas e escolha uma!
@@ -65,7 +66,7 @@ $ git checkout -b [nome-do-ramo]
 
 O nome do ramo fica à sua escolha, mas é recomendável usar um nome que comece com a numeração
 do _issue_ no GitHub seguido de algumas poucas palavras que descrevem o _issue_.
-Exemplo: `10-adicionar-glossario-tf2`
+Exemplo: `10-adicionar-guia-ricochet2`
 
 ### iii-a. Edição de páginas
 Para editar páginas, basta abrir o arquivo .md correspondente e começar a editá-lo, seguindo o nosso
@@ -150,8 +151,8 @@ Para o exemplo dos dois arquivos acima:
 na área de preparação:
     ```console
     $ git status
-    On branch 11-adicionar-guia-ricochet2
-    Your branch is up to date with 'origin/11-adicionar-guia-ricochet2'.
+    On branch 10-adicionar-guia-ricochet2
+    Your branch is up to date with 'origin/10-adicionar-guia-ricochet2'.
     
     Changes to be committed:
       (use "git reset HEAD <file>..." to unstage)
@@ -194,7 +195,7 @@ acima da lista de arquivos. No campo que aparecer, digite o nome do ramo e apert
 
 O nome do ramo fica à sua escolha, mas é recomendável usar um nome que comece com a numeração
 do _issue_ no GitHub seguido de algumas poucas palavras que descrevem o _issue_.
-Exemplo: `10-adicionar-glossario-tf2`
+Exemplo: `10-adicionar-guia-ricochet2`
 
 ### ii-a. Edição de arquivos
 
@@ -253,8 +254,8 @@ No GitHub, isso é feito por meio de um _pull request_ (PR).
 Abra a página do seu _fork_ no GitHub, selecione o ramo onde efetuou as alterações por meio
 do botão **Branch:** à esquerda e depois clique em **New pull request**.
 
-Dê um título para o PR (citando o número do _issue_ com um # antes, ex: `#10`) e descreva
-o que foi feito no comentário. Depois clique em **Create pull request**.
+Dê um título para o PR (citando o número do _issue_ com um # antes, ex: `#10 Adição arquivos Ricochet 2`)
+e descreva o que foi feito no comentário. Depois clique em **Create pull request**.
 
 ## Apêndice
 
@@ -272,13 +273,19 @@ Ex: O usuário Fulano-de-Tal está adicionando o glossário do Ricochet 2 (_issu
 Ele ainda não terminou, mas deseja efetivar as alterações até agora. Logo, a mensagem de _commit_ será:
 
 ```
-REFS #3 por Fulano-de_tal: Começando a criar glossário do Ricochet 2.
+REFS #3 por Fulano-de-Tal: Começando a criar guia do Ricochet 2.
 ```
 
 Depois, quando ele terminar e efetivar, a mensagem desse novo _commit_ será:
 
 ```
-CLOSES #3 por Fulano-de_tal: Terminei criação do glossário do Ricochet 2.
+CLOSES #3 por Fulano-de-Tal: Terminei criação do guia do Ricochet 2.
+```
+
+_Caso esteja realizando uma alteração simples, sem_ issue, _basta citar o nome do usuário, desta forma:_
+
+```
+por Fulano-de-Tal: Corrigi um erro no glossário do Ricochet 2.
 ```
 
 # Código de Conduta para Colaboradores
