@@ -1,0 +1,1 @@
+[Insisra o texto traduzido aqui]

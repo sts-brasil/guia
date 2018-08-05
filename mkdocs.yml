@@ -23,6 +23,7 @@ pages:
       - Dota 2:
         - 'Informações gerais': 'jogos/dota2/index.md'
         - 'Glossário': 'jogos/dota2/glossario.md'
+      - PAP: 'jogos/pap/passoapasso.md'
   - Apêndice:
       - Produtos disponíveis: 'apendice/produtos-disponiveis.md'
 
