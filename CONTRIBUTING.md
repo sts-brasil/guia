@@ -46,15 +46,21 @@ bifurcado.
 Para colaboradores no Linux e/ou com maior afinidade com git,
 [instale o git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git),
 abra o terminal/prompt de comando, navegue até a pasta onde deseja clonar o repositório
-e clone-o.
+e clone-o. Exemplo para um usuário Fulano-de-Tal, que clonará o seu _fork_, também chamado
+`guia`, na pasta `/home/fulano/workspace`:
+
+```console
+$ cd /home/fulano/workspace
+$ git clone https://github.com/Fulano-de-Tal/guia.git
+```
 
 ### ii. Criação de novo ramo
 Crie um novo ramo para melhor organizar as suas alterações. Caso esteja usando o GitHub Desktop,
 clique em _Current branch_ no topo e depois no botão _New branch_. Para usuários do git em
 linha de comando, navegue até a raiz do repositório e execute o comando:
 
-```bash
-git checkout -b [nome-do-ramo]
+```console
+$ git checkout -b [nome-do-ramo]
 ```
 
 O nome do ramo fica à sua escolha, mas é recomendável usar um nome que comece com a numeração
@@ -114,9 +120,9 @@ para que configure o PATH automaticamente.
 Depois de instalado, [crie e ative um novo ambiente virtual](https://docs.python.org/3/tutorial/venv.html)
 onde preferir, depois acesse a pasta raiz do repositório pelo terminal/prompt de comando e execute:
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
+```console
+$ pip install -r requirements.txt
+$ mkdocs serve
 ```
 
 Depois, abra a página http://127.0.0.1:8000 &mdash; o guia deverá carregar, com as suas alterações.
@@ -129,8 +135,50 @@ Assinale os arquivos desejados e, embaixo, informe o resumo e a descrição das 
 O resumo deve começar como descrito [aqui](#formato-da-mensagem-de-commit) e deve ser breve.
 A descrição pode ser mais longa, mas não muito.
 
-Já para usuários da linha de comando, adicione os arquivos à área de preparação
+Já para usuários da linha de comando, adicione arquivos novos à área de preparação,
+confirme que todos os arquivos estão adicionados
 e realize um _commit_ cuja mensagem segue o formato [aqui definido](#formato-da-mensagem-de-commit).
+
+Para o exemplo dos dois arquivos acima:
+1. Adicionamos quaisquer arquivos novos à área de preparação:
+    ```console
+    $ git add docs/jogos/ricochet2/index.md
+    $ git add docs/jogos/ricochet2/glossario.md
+    ```
+
+2. Confirme que todos os arquivos que adicionados/alterados, e apenas eles, estão
+na área de preparação:
+    ```console
+    $ git status
+    On branch 11-adicionar-guia-ricochet2
+    Your branch is up to date with 'origin/11-adicionar-guia-ricochet2'.
+    
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+    
+            new file:   docs/jogos/ricochet2/glossario.md
+            new file:   docs/jogos/ricochet2/index.md
+    
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+    
+            modified:   mkdocs.yml
+    ```
+    
+    Caso tenha algum arquivo indesejado na lista de `new file:` ou `modified:`, digite
+    `git checkout [caminho do arquivo]` para revertê-lo à versão original.
+    
+3. Inicie o processo de commit:
+    ```bash
+    $ git commit
+    ```
+    
+4. Na tela de edição que será exibida, digite a mensagem do commit.
+Na primeira linha, inicie com [esta parte](#formato-da-mensagem-de-commit) e, depois, um resumo (de 5 palavras).
+do que foi feito. Depois, caso achar necessário uma descrição mais longa, aperte Enter duas vezes e digite
+uma descrição mais longa. Quando terminar, pressione <kbd>Ctrl</kbd> + <kbd>X</kbd>,
+<kbd>Y</kbd> (para salvar) e <kbd>Enter</kbd>.
 
 ### vi. Envio das alterações para o GitHub
 GitHub Desktop: Clique no botão &quot;Push to origin&quot; no topo da janela.
