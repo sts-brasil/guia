@@ -2,47 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>http://sts.berna.zone/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/candidatos/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/candidatos/dicas/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/candidatos/regras/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/externos/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/jogos/artifact/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/jogos/dota2/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/jogos/dota2/glossario/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://sts.berna.zone/apendice/produtos-disponiveis/</loc>
-     <lastmod>2018-08-04</lastmod>
+     <lastmod>2018-08-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://sts.berna.zone/apendice/guia-de-estilo/</loc>
+     <lastmod>2018-08-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
