@@ -16,23 +16,23 @@
 
 {!include/aviso-maiuscula-minuscula-glossario.md!}
 
-Termo | Tradução
------|--------
-account name| nome de usuário
-Community Hub|Central da Comunidade
-Free to Play|gratuito para jogar
-Leaderboards|classificações[^2]
-Login|iniciar a sessão
-Logout| finalizar a sessão
-Steam Account| conta Steam
-Steam Client|cliente Steam
-Steam Cloud|Nuvem Steam
-Steam Community|Comunidade Steam
-Steam Community Market|Mercado da Comunidade Steam
-Steam Matchmaking| criação de partidas no Steam
-Steam Overlay|painel Steam
-Steam Workshop|Oficina Steam
-Trading Cards|cartas colecionáveis[^3]
+| Termo                  | Tradução                     |
+|------------------------|------------------------------|
+| account name           | nome de usuário              |
+| Community Hub          | Central da Comunidade        |
+| Free to Play           | gratuito para jogar          |
+| Leaderboards           | classificações [^2]          |
+| Login                  | iniciar a sessão             |
+| Logout                 | finalizar a sessão           |
+| Steam Account          | conta Steam                  |
+| Steam Client           | cliente Steam                |
+| Steam Cloud            | Nuvem Steam                  |
+| Steam Community        | Comunidade Steam             |
+| Steam Community Market | Mercado da Comunidade Steam  |
+| Steam Matchmaking      | criação de partidas no Steam |
+| Steam Overlay          | painel Steam                 |
+| Steam Workshop         | Oficina Steam                |
+| Trading Cards          | cartas colecionáveis [^3]    |
 
 [^2]:
     A depender do contexto, o uso de **Tabelas de classificações** também é aceitável.
