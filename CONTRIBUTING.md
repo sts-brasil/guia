@@ -70,7 +70,7 @@ Exemplo: `10-adicionar-guia-ricochet2`
 
 ### iii-a. Edição de páginas
 Para editar páginas, basta abrir o arquivo .md correspondente e começar a editá-lo, seguindo o nosso
-[guia de estilo](guia-de-estilo.md). Um editor recomendado é o [Visual Studio Code](https://code.visualstudio.com/),
+[guia de estilo](https://sts.berna.zone/apendice/guia-de-estilo/). Um editor recomendado é o [Visual Studio Code](https://code.visualstudio.com/),
 com extensões para Markdown (o próprio editor recomendará alguns) e para correção ortográfica.
 
 ### iii-b. Adição de páginas
