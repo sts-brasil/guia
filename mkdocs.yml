@@ -18,6 +18,10 @@ pages:
       - Dicas: 'candidatos/dicas.md'
       - Regras: 'candidatos/regras.md'
   - Tradutores externos: 'externos/index.md'
+  - Essencial:
+      - Antes de tudo: 'essencial/index.md'
+      - Diretrizes gerais: 'essencial/diretrizes.md'
+      - Glossário: 'essencial/glossario.md'
   - Jogos:
       - Artifact: 'jogos/artifact.md'
       - Dota 2:
