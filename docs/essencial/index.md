@@ -1,4 +1,4 @@
-# Antes de tudo...
+# Antes de começarmos
 
 {!include/aviso-em-construcao.md!}
 
@@ -10,14 +10,14 @@ A tradução, assim como as suas regras e termos, está em constante evolução.
 Assim, estamos sempre abertos a sugestões e críticas, sejam de membros da equipe
 ou de pessoas de fora.
 
-As únicas exceções[^1] são:
+As únicas exceções[^excecao-excecao] são:
 
 * **Destradução** de termos, i.é., trocar um termo ou conjunto de termos
 * em português pela versão em inglês;
 * **Alguns termos traduzidos em reunião coletiva**:
     * Itens de Team Fortress 2 anteriores a 2014;
-    * Todos os termos da série Half-Life 2 definidos no respectivo [glossário](jogos/half-life/glossario.md);
-
+    * Todos os termos da série Half-Life 2 definidos no respectivo
+    [glossário](jogos/half-life/glossario.md);
 
 ## A tradução deve almejar estabilidade
 
@@ -35,6 +35,5 @@ recentes ao Steam ou aos jogos traduzidos pelo STS. Em especial,
 termos do glossário podem não ser os melhores para contextos que
 venham a aparecer.
 
-
-[^1]: A exceção para as exceções é, claro, se houver algum erro
+[^excecao-excecao]: A exceção para as exceções é, claro, se houver algum erro
 (seja de português ou interpretação) não intencional na tradução atual.
