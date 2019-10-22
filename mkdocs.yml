@@ -27,6 +27,10 @@ pages:
       - Dota 2:
         - 'Informações gerais': 'jogos/dota2/index.md'
         - 'Glossário': 'jogos/dota2/glossario.md'
+      - Counter-Strike:
+        - 'Informações gerais': 'jogos/csgo/index.md'
+        - 'Diretrizes de tradução': 'jogos/csgo/diretrizes.md'
+        - 'Glossário': 'jogos/csgo/glossario.md'
   - Apêndice:
       - Produtos disponíveis: 'apendice/produtos-disponiveis.md'
       - Guia de estilo: 'apendice/guia-de-estilo.md'
