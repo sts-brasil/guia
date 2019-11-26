@@ -11,19 +11,21 @@ Exceto produtos **indisponíveis**, tradutores podem sugerir traduções para
 | Produto                           | Estado                |
 |-----------------------------------|-----------------------|
 | Cliente Steam                     | Tradução continuada   |
+| Biblioteca Steam 2019             | Indisponível          |
 | Big Picture                       | Tradução continuada   |
 |-----------------------------------|-----------------------|
 | Loja Steam                        | Tradução continuada   |
 | Descrições de jogos da Loja Steam | Indisponíveis         |
 |-----------------------------------|-----------------------|
 | Comunidade Steam                  | Tradução continuada   |
-| Nova Conversa Steam               | Indisponível          |
+| Conversa Steam 2018               | Indisponível          |
 |-----------------------------------|-----------------------|
 | Suporte Steam (interface)         | Lançado               |
 | Suporte Steam (artigos)           | Tradução continuada   |
 |-----------------------------------|-----------------------|
 | Aplicativo Steam                  | Lançado               |
 | Aplicativo Steam Link             | Indisponível          |
+| Aplicativo Conversa Steam         | Indisponível          |
 |-----------------------------------|-----------------------|
 | SteamVR                           | Tradução continuada   |
 |-----------------------------------|-----------------------|
@@ -53,7 +55,9 @@ Exceto produtos **indisponíveis**, tradutores podem sugerir traduções para
 | Portal                                        | Aguardando lançamento |
 | Portal 2                                      | Aguardando lançamento |
 |-----------------------------------------------|-----------------------|
-| Artifact                                      | Tradução não iniciada |
+| Artifact                                      | Indisponível          |
+| Dota Underlords                               | Indisponível          |
+| Half-Life: Alyx                               | Indisponível          |
 |-----------------------------------------------|-----------------------|
 | Jogos GoldSrc (HL1, CS 1.6, Ricochet, etc.)   |Indisponíveis          |
 | Outros jogos vendidos/distribuídos pelo Steam |Indisponíveis          |
