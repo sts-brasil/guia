@@ -23,7 +23,6 @@ pages:
       - Diretrizes gerais: 'essencial/diretrizes.md'
       - Glossário: 'essencial/glossario.md'
   - Jogos:
-      - Artifact: 'jogos/artifact.md'
       - Dota 2:
         - 'Informações gerais': 'jogos/dota2/index.md'
         - 'Glossário': 'jogos/dota2/glossario.md'
